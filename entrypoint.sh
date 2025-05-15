@@ -5,7 +5,11 @@ pid=$!
 
 sleep 5
 
-echo "> Download deepseek r1:32b model..."
-ollama pull deepseek-r1:32b
+if ! ollama list | grep -q "deepseek-r1:32b"; then
+  echo "[Ollama] Baixando modelo deepseek-r1:32b..."
+  ollama pull deepseek-r1:32b
+else
+  echo "[Ollama] Modelo já está instalado localmente."
+fi
 
 wait $pid
