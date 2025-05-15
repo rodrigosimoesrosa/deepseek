@@ -1,4 +1,4 @@
-# DeepSeek R1 – Web UI with Docker
+# DeepSeek r1:7b & phi3:mini – Web UI with Docker
 
 This project provides a Dockerized environment to run the **DeepSeek R1** language model using **Ollama** and a clean, responsive **Web UI** interface.
 
@@ -51,9 +51,10 @@ This project provides a Dockerized environment to run the **DeepSeek R1** langua
 
 ---
 
-## 🌐 Network
+## 🌐 Models
 
-- `deepseek`: Custom Docker network for communication between services.
+- [deepseek-r1:7b](https://ollama.com/library/deepseek-r1:7b)
+- [phi3:mini](https://ollama.com/library/phi3:mini)
 
 ---
 
