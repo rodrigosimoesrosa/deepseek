@@ -8,7 +8,7 @@ services:
       - ollama:/root/.ollama
       - ./entrypoint.sh:/entrypoint.sh
     networks:
-      - deepseek
+      - ollama
     environment:
       - OLLAMA_CPU=1
     pull_policy: always
@@ -26,10 +26,11 @@ services:
       - open-webui:/app/backend/data
     restart: always
     networks:
-      - deepseek
+      - ollama
 
 networks:
-  deepseek:
+  ollama:
+    name: ollama-network
 
 volumes:
   ollama:
