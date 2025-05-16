@@ -15,8 +15,8 @@ This project provides a Dockerized environment to run the **DeepSeek R1**, **phi
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/rodrigosimoesrosa/deepseek.git
-   cd deepseek
+   git clone https://github.com/rodrigosimoesrosa/ollama.git
+   cd ollama
    ```
 
 2. **Build and launch the services**:
@@ -31,7 +31,7 @@ This project provides a Dockerized environment to run the **DeepSeek R1**, **phi
 
 ## 📁 Project Structure
 
-- `entrypoint.sh`: Initializes Ollama and downloads the DeepSeek model.
+- `entrypoint.sh`: Initializes Ollama and downloads the LLM model.
 - `Dockerfile`: Sets up the environment for Ollama.
 - `compose.yaml`: Defines the multi-container setup using Docker Compose.
 
